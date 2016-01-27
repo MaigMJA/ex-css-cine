@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  background-color: #ccc;
+  position: relative;
+  /*#9b9b9b;*/
+}
+section p {
+  text-align: justify;
+  padding: 5% 8%;
+  font-family: arial;
+  /*background-color: rgba(255, 0, 0, 0.1);*/
+  position: relative;
+}
+header {
+  line-height: 50px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  position: fixed;
+  z-index: 9;
+  text-align: center;
+}
+#nav {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  width: 100%;
+}
+#nav li a, #nav li, footer ul li a, footer ul li {
+  padding: 5px;
+  /*margin-right:8px;*/
+  color: white;
+  list-style-type: none;
+  text-align: center;
+  display: inline;
+  z-index: 10;
+  text-decoration: none;
+  font-family: arial;
+}
+#nav li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: yellow;
+}
+footer ul li a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+footer ul li{
+  clear:both;
+  /*top:95%;*/
+
+}
+
+main {
+  width: 84%;
+  margin: 10% auto 4%;
+  background-color: gold;
+  text-align: center;
+  z-index: 5;
+  border-radius: 5px;
+
+  -moz-box-shadow: -8px 8px 100px 0px #666;
+-webkit-box-shadow: -8px 8px 100px 0px #666;
+-o-box-shadow: -8px 8px 100px 0px #666;
+box-shadow: -8px 8px 100px 0px #666;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=224, Strength=100);
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+}
+section {
+  width: 70%;
+  height: 100%;
+  /*position: relative;*/
+  float: left;
+  box-sizing: padding-box;
+  position: relative;
+}
+aside {
+  height: 100%;
+  position: relative;
+  width: 30%;
+  background-color: #cd9934;
+  float: right;
+  border: #986536 solid 3px;
+  box-sizing: border-box;
+  padding: 2px 2px 0 0;
+  -moz-box-shadow: -8px 8px 100px 0px #ffc702;
+-webkit-box-shadow: -8px 8px 100px 0px #ffc702;
+-o-box-shadow: -8px 8px 100px 0px #ffc702;
+box-shadow: -8px 8px 100px 0px #ffc702;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=224, Strength=100);
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 0 0 0 8px;
+}
+aside figure img {
+  width: 30%;
+  border-radius: 8px;
+  border: solid 2px #777;
+  float: left;
+  margin-bottom: 4px;
+}
+aside figure img:active {
+  width: 30%;
+  position: absolute;
+  top:30%;
+  left: 30%;
+  margin: 13px;
+  border: 4px solid black;
+
+  /*box-sizing: border-box;*/
+  /*http://www.debray-jerome.fr/outils/Generateur-de-box-shadow-css3.html*/
+  -moz-box-shadow: 8px 8px 8px 0px #986536;
+  -webkit-box-shadow: 8px 8px 8px 0px #986536;
+  -o-box-shadow: 8px 8px 8px 0px #986536;
+  box-shadow: 8px 8px 8px 0px #986536;
+  filter: progid: DXImageTransform.Microsoft.Shadow(color=#986536, Direction=224, Strength=8);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: solid 4px #CCC;
+}
+figure {
+padding: 5px 8px;
+margin: 3px auto;
+clear: both;
+color: white;
+width: 80%;
+display:block;
+}
+figcaption {
+  float: right;
+  display: inline-block;
+  top:0;
+  width: 60%;
+}
+.nofloat {
+  clear: both;
+  height: 0;
+  position: relative;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    bottom:0;
+}
+.clearfix {
+    display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/* End hide from IE-mac */
+
+
+
+
+
+footer {
+  /*position: absolute;*/
+  position: sticky;
+
+  line-height: 60px;
+  background-color: #9698ed;
+  width: 60%;
+
+  border-radius: 8px;
+  left: 20%;
+
+  padding: 0;
+  /*margin-bottom: 0;*/
+  text-align: center;
+  bottom: 0;
+  margin: auto;
+  /*margin-top: 50%;*/
+}
+
+
+.Three-Dee{
+position: fixed;
+z-index: 20;
+top: 30px;
+left: 20px;
+transform: rotate(340deg);
+
+font-family: Arimo ;
+line-height: 1em;
+color: #ffed4f;
+font-size: 18px;
+text-shadow:0px 0px 0 rgb(204,186,28),-1px 1px 0 rgb(191,173,15),-2px 2px 0 rgb(177,159,1),-3px 3px 0 rgb(164,146,-12),-4px 4px 0 rgb(150,132,-26),-5px 5px 0 rgb(137,119,-39),-6px 6px 0 rgb(123,105,-53),-7px 7px 0 rgb(110,92,-66),-8px 8px 0 rgb(96,78,-80), -9px 9px 0 rgb(82,64,-94),-10px 10px 9px rgba(0,0,0,0.8),-10px 10px 1px rgba(0,0,0,0.5),0px 0px 9px rgba(0,0,0,.2);
+margin: 0;
+padding: 0;
+}
