@@ -159,7 +159,8 @@ figcaption {
     bottom:0;
 }
 .clearfix {
-    display: inline-block;
+    display: table-row;
+    /*overflow:auto;*/
 }
 /* Hides from IE-mac \*/
 * html .clearfix {
@@ -176,7 +177,7 @@ figcaption {
 
 footer {
   /*position: absolute;*/
-  position: sticky;
+  position: relative;
 
   line-height: 60px;
   background-color: #9698ed;
